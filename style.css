@@ -1,21 +1,33 @@
 body {
     display: block;
     text-align: center;
-    background-color: #44d9e6;
-    
+    padding: 20px;
 /*  font: TBD*/
     
+}
+body::after {
+  content: "";
+  background: url("Background - Site.png")no-repeat top center;
+  background-size: cover;
+  opacity: 0.15;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 
 p, h4, h5 {
     
     text-align: justify;
-    margin-left: 40px;
+    margin: 30px;
 }
 
 h1 {
     color: black;
-    font-size: 36px
+    font-size: 48px;
+    margin: 10px;
 }
 
 
