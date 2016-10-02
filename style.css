@@ -1,0 +1,45 @@
+body {
+    display: block;
+    text-align: center;
+    background-color: #44d9e6;
+    
+/*  font: TBD*/
+    
+}
+
+p, h4, h5 {
+    
+    text-align: justify;
+    margin-left: 40px;
+}
+
+h1 {
+    color: black;
+    font-size: 36px
+}
+
+
+h2 {
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-bottom: 12px;
+    padding: 0;
+}
+
+h4 {
+    margin-bottom: 2px;
+}
+
+h4 + p {
+    margin-top: 2px;
+}
+
+.red {
+    color: orangered;
+}
+
+.blue {
+    color: steelblue;
+}
