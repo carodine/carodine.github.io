@@ -1,10 +1,47 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--[if lt IE 9]><html class="ie"><![endif]-->
+<!--[if !IE]><!--><html><!--<![endif]-->
 <html>
     <head>
 		<meta charset="UTF-8">
 		<title>Working Ensemble</title>
-		<link rel="stylesheet" type="text/css" href="style.css"/>
+        <!-- Viewport meta tag to prevent iPhone from scaling the page -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        
+		<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+        
+        <!-- Google email -->
         <meta name="google-site-verification" content="NsaxFaAsTuPzxFvcTEkGPv0p9jxRS07Ci9tN4uJ4_ow" />
+        
+        <!-- Normalize hide address bar for iOS and Android -->
+		<script src="./js/hideaddressbar.js" type="text/javascript"></script>
+		
+		<!-- Add media query support for IE8 and under. Must place media queries in external stylesheet -->
+		<script src="./js/respond.min.js" type="text/javascript"></script>
+        
+        <!-- Using picturefill to load conditional images and matchmedia to provide support for IE8 and below + older browsers -->
+		<script src="./js/picturefill.js"></script>
+		<script src="./js/matchmedia.js"></script>
+		
+		<!--[if lt IE 9]>
+			<script src="./js/html5.js"></script>
+		<![endif]-->
+			
+			<!--[if lt IE 9]>
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+			<![endif]-->
+
+			<!--[if IE 8]>
+			<script src="./js/checkbox.js"></script>
+			<![endif]-->
+			
+			<!--[if IE 6]>
+				<script src="./js/selectivizr-min.js"></script>
+			<![endif]-->
+        
+        <script src="./js/modernizr.js" type="text/javascript"></script>
+        
+        <!-- Google Analytics-->
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -12,37 +49,220 @@
           })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
           ga('create', 'UA-84994784-1', 'auto');
           ga('send', 'pageview');
-
         </script>
-        </head>
-    <body>
-        <h1>Working Ensemble</h1>
-        <h2>Child Friendly Co-Working Space</h2>
-        <h3>Enjoy guilt-free time to focus on work while your children are entertained, all in one location.</h3>
+
+        <!-- sumome - Marketing tools-->
+        <!--<script src="//load.sumome.com/" data-sumo-site-id="0d4933086772d40fc96eeb0b1fb062d333b8bd2150567e627868c4fcf49736c1" async="async"></script>-->
+	</head>
+    <body lang="en">
+        <div id="container-nav">
+			<section id="nav" class="group wrapper">
+                <h3>Working Ensemble</h3>
+                
+                <!-- Checkbox Hack markup -->
+		        <input type="checkbox" id="toggle" />
+		        <label for="toggle" onclick>Menu</label>
+		        <!-- /Checkbox Hack markup -->
+                
+                <nav>
+		            <ul>
+		                <li><a href="#home">Home</a></li>
+		                <li><a href="#whatisit">What Is It?</a></li>
+                        <li><a href="#useit">Use the system</a></li>
+                        <li><a href="#faq">F.A.Q.</a></li>
+                        <li><a href="#contact">Contact</a></li>
+		            </ul>
+		        </nav>
+			</section>
+		</div>
         
-        <p>1 Time Slot Package content: <br>
-        - A desk in the shared workspace <br>
-        - 3 hours of activities for your kid by certified staff in the play area, while you are working in the workspace (You are, of course, welcome to stay in the play area)* <br>
-        - Free wifi <br>
-	- Free coffee and tea, and of course, water <br>
-        - Kitchen with sink, fridge and microwave. Bring your own lunch/snack for your child and yourself (We have some snacks for the kids too.)
-        </p>
+        <div id="container-header">
+			<header id="masthead" class="wrapper">
+				<figure id="we"> 
+                    <h1>Working Ensemble</h1>
+                    <!--<div data-picture data-alt="Working Ensemble">
+                        <div data-src="./img/Liam - Logo.png"></div>
+                        <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+				        <!--<noscript>
+				            <img src="./img/Liam - Logo.png" alt="Working Ensemble">
+				        </noscript>
+				    </div>-->
+				</figure>
         
-        <p>Available time slots, from Monday to Friday: 9:00am - 12:00pm, 12:30pm - 3:30pm, 4:00pm - 7:00pm.
-        </p>
-        <p>Address: 128 Lansdowne Ave TORONTO, ON, M6K 2V9</p>
-        
-        <h3>To book a Tour, or ask a question, send an email to <a href="mailto:diane.workingensemble@gmail.com?Subject=Book%20a%20Tour" target="_top">diane.workingensemble@gmail.com</h3>
-        <br>
-        <h2><a href="http://store.workingensemble.ca">Buy Time Slots and Memberships</a></h2>
-        <br>
-        <p>*Note: Parent must remain on site and be readily available while the child/children is/are under our care. </p>
-        <p>
-            Note bis: There are 2 cats at the house. They are friendly and will certainly come to see who you are before disappearing for their daily "day long" nap. If you feel they can pose a problem, let me know and I'll set up a room for them during the time slot. I will, in any case, like I do just before every time slots, clean thoroughly the kids' area to remove any cat hair there could be.
-        </p>
-            
-        <p>Follow Us: <a href="https://www.facebook.com/WorkingEnsemble">Facebook</a> - <a href="https://twitter.com/WorkingEnsemble">Twitter</a> - <a href="https://www.instagram.com/WorkingEnsemble">Instagram</a></p>
-    
+                <h1> </h1>
+                <h2>Child Friendly Co-Working Space</h2>
+                <h3>Come make the most of guilt-free time to focus on your work while your children enjoy the quality care we provide, all in one location.</h3>
+                <h3><a href="mailto:diane.workingensemble@gmail.com?Subject=Book%20a%20Tour" target="_top">Book a Tour Now!</a></h3>
+            </header>
+		</div>
+		
+        <div id="container-content">
+			<article id="content">
+			
+				<section id="whatisit" class="group">
+				
+					<header class="wrapper">
+                        <h2>What is this New Concept?</h2>
+                        <h4>Is it a daycare? No, it's a space, better, a system focused on you, parents, who need an alternative to traditional childcare to meet the needs of your freelance/entrepreneur working schedule.</h4>
+                        <h4>The system consists in 3 easy steps: Buy some Time slots, Schedule them and Come enjoy!</h4>
+                        <h4>Here is what one 3 hours Time Slot Package contains:</h4>
+                    </header>
+                    
+                    <article class="group wrapper">
+                        <div class="box">
+                            <h4>For the parent</h4>
+                            <ul>
+                                <li>- A seat at the community table in the shared workspace</li>
+                                <li>- Free wifi</li>
+                                <li>- Free coffee and tea, and of course, water</li>
+                                <li>- Access to the kitchen with a sink, fridge and microwave (Bring your own lunch/snack)</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="group wrapper">
+                        <div class="box">
+                            <h4>For the children</h4>
+                            <ul>
+                                <li>- Activities - including, but not limited to: free play, crafts, reading - by certified staff in the play area, while you are working in the workspace (You are, of course, welcome to take sneak peeks, or even stay in the play area)* </li>
+                                <li>- Snacks - we suggest you bring their own, but we have some too (Let us know of any allergies)</li>
+                            </ul>
+                        </div>
+                    </article>
+                </section>
+                
+                <section id="useit" class="group">
+                    <header class="wrapper">
+                        <h2>Use the System</h2>
+                        <p>Here are the steps to take to take advantage of the space:</p>
+                    </header>
+                    <article class="group wrapper">
+                        <div class="box">
+                            <h4>Step 1:</h4>
+                            <h5><a href="http://store.workingensemble.ca">Buy Time Slots</a></h5>
+                            <h6>You can either buy Time Slots one by one, or a certain quantity, at a reduced price, to use monthly.</h6>
+                        </div>
+                    </article>
+                    <article class="group wrapper">
+                        <div class="box">
+                            <h4>Step 2:</h4>
+                            <h5><a href="https://workingensemble.acuityscheduling.com">Schedule your Time Slots</a></h5>
+                            <h5>You can buy them individually directly there too.</h5>
+                            <h6>The Time Slots are available from Monday to Friday at these times:</h6>
+                            <h6>- From 9:00am to 12:00pm</h6>
+                            <h6>- From 12:30pm to 3:30pm</h6>
+                            <h6>- From 4:00pm to 7:00pm</h6>
+                        </div>
+                    </article>
+                    <article class="group wrapper">
+                        <div class="box">
+                            <h4>Step 3:</h4>
+                            <h5>Come benefit from this concept, both you and your child.</h5>
+                            <h6>The address is: 128 Lansdowne Ave TORONTO, ON, M6K 2V9</h6>
+                            <figure>
+                               <img src="./img/WE%20on%20map.png" alt="Map">
+                           </figure>
+                        </div>
+                    </article>
+                </section>
+                
+                <section id="faq" class="group">
+                    <header class="wrapper">
+                        <h2>F.A.Q.</h2>
+                        <p>Coming soon... </p>
+                        <p>Send me your questions and we'll answer them here.</p>
+                        <!--<p>Here are the answers to your questions:</p>-->
+                    </header>
+                    <article class="wrapper"></article>
+                    <!--<article class="wrapper">	
+                        <div class="box">
+                            <h4>Topic</h4>
+                            <h5>Question 1</h5>
+                            <p>Answer 1: blablabla balbalbla blablabla balbal blablablabla balbalbla blablabla balbalbla</p>
+                            <h5>Question 2</h5>
+                            <p>Answer 2: blablabla balbalbla blablabla balbal blablablabla balbalbla blablabla balbalbla</p>
+                            <h5>Question 3</h5>
+                            <p>Answer 3: blablabla balbalbla blablabla balbal blablablabla balbalbla blablabla balbalbla</p>
+                            <h5>Question 4</h5>
+                            <p>Answer 4: blablabla balbalbla blablabla balbal blablablabla balbalbla blablabla balbalbla</p>
+                        </div>
+                    </article>
+                    <article class="wrapper">
+                        <div class="box">
+                            <h4>Topic</h4>
+                            <h5>Question 1</h5>
+                            <p>Answer 1: blablabla balbalbla blablabla balbal blablablabla balbalbla blablabla balbalbla</p>
+                            <h5>Question 2</h5>
+                            <p>Answer 2: blablabla balbalbla blablabla balbal blablablabla balbalbla blablabla balbalbla</p>
+                            <h5>Question 3</h5>
+                            <p>Answer 3: blablabla balbalbla blablabla balbal blablablabla balbalbla blablabla balbalbla</p>
+                            <h5>Question 4</h5>
+                            <p>Answer 4: blablabla balbalbla blablabla balbal blablablabla balbalbla blablabla balbalbla</p>
+                        </div>
+                    </article>
+                    <article class="wrapper">
+                        <div class="box">
+                            <h4>Topic</h4>
+                            <h5>Question 1</h5>
+                            <p>Answer 1: blablabla balbalbla blablabla balbal blablablabla balbalbla blablabla balbalbla</p>
+                            <h5>Question 2</h5>
+                            <p>Answer 2: blablabla balbalbla blablabla balbal blablablabla balbalbla blablabla balbalbla</p>
+                            <h5>Question 3</h5>
+                            <p>Answer 3: blablabla balbalbla blablabla balbal blablablabla balbalbla blablabla balbalbla</p>
+                            <h5>Question 4</h5>
+                            <p>Answer 4: blablabla balbalbla blablabla balbal blablablabla balbalbla blablabla balbalbla</p>
+                        </div>
+                    </article>-->
+                    <footer class="wrapper box">
+                        <p>*Note: Parent must remain on site and be readily available while the child/children is/are under our care. </p>
+                        <p>Note 2: There are 2 cats at the house. They are friendly and will certainly come to see who you are before disappearing for their daily "day long" nap. If you feel they can pose a problem, let me know and I'll set up a room for them during the time slot. I will, in any case, like I do just before every time slots, clean thoroughly the kids' area to remove any cat hair there could be.</p>
+                    </footer>
+				</section>
+                <br/>
+                <section id="contact">
+                    <header class="wrapper">
+                        <h2>Contact</h2>
+                    </header>
+                    <article class="wrapper">
+                        <h4>To book a tour, ask a question or send a suggestion, send an email to <a href="mailto:diane.workingensemble@gmail.com" target="_top">diane.workingensemble@gmail.com</a></h4>
+                    </article>
+                </section>
+                <br/>
+                <div class="social">
+                <div class="wrapper box">
+                        <h3>Follow Us: </h3>
+                        <h5><a href="https://www.facebook.com/WorkingEnsemble">Facebook</a></h5>
+                        <h5><a href="https://twitter.com/WorkingEnsemble">Twitter</a></h5>
+                        <h5><a href="https://www.instagram.com/WorkingEnsemble">Instagram</a></h5>
+                    </div>
+                    </div>
+            </article>
+        </div>
+
+        <div id="container-footer">
+            <!--<form id="contact" action="mailto:diane.workingensemble@gmail.com" method="post" enctype="text/plain">
+                <fieldset class="wrapper">
+                    <legend>Contact</legend>
+                        <ul class="group">
+                            <li class="name">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" />
+                            </li>
+                            <li class="email">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" />
+                            </li>
+                            <li class="message">
+                                <label for="message">Say Hello</label>
+                                <textarea id="message" name="message"></textarea>
+                            </li>
+                        </ul>
+                    <input class="send" type="submit" name="submit" value="Send" />
+                </fieldset>
+            </form>    -->       
+            <footer id="colophon" class="wrapper">
+                <p>© 2016 Working Ensemble. All rights reserved. </p>
+            </footer>
+        </div>
     </body>
 </html>
 

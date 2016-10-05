@@ -1,0 +1,940 @@
+/********************************************
+	Tag Resets
+********************************************/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+
+/********************************************
+	Normalize CSS
+	http://necolas.github.com/normalize.css/
+********************************************/
+html {
+	height: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+    line-height: 1;
+}
+
+body {
+	min-height: 100%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+audio,
+canvas,
+video {
+	display: block;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+input,
+textarea,
+button,
+select {
+	margin: 0;
+	font-size: 100%;
+	line-height: normal;
+	vertical-align: baseline;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+textarea {
+	overflow: auto;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ******************************************
+	Web Fonts
+****************************************** */
+
+@font-face {
+    font-family: "SQMarket";
+    src: url("../fonts/sqmarket-bold.eot");
+    src: url("../fonts/sqmarket-bold.eot?#iefix") format("eot"), url("../fonts/sqmarket-bold.woff") format("woff"), url("../fonts/sqmarket-bold.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "SQMarket";
+    src: url("../fonts/sqmarket-bold.eot");
+    src: url("../fonts/sqmarket-bold.eot?#iefix") format("eot"), url("../fonts/sqmarket-bold.woff") format("woff"), url("../fonts/sqmarket-bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "SQMarket";
+    src: url("../fonts/sqmarket-bolditalic.eot");
+    src: url("../fonts/sqmarket-bolditalic.eot?#iefix") format("eot"), url("../fonts/sqmarket-bolditalic.woff") format("woff"), url("../fonts/sqmarket-bolditalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "SQMarket";
+    src: url("../fonts/sqmarket-bolditalic.eot");
+    src: url("../fonts/sqmarket-bolditalic.eot?#iefix") format("eot"), url("../fonts/sqmarket-bolditalic.woff") format("woff"), url("../fonts/sqmarket-bolditalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "SQMarket";
+    src: url("../fonts/sqmarket-light.eot");
+    src: url("../fonts/sqmarket-light.eot?#iefix") format("eot"), url("../fonts/sqmarket-light.woff") format("woff"), url("../fonts/sqmarket-light.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "SQMarket";
+    src: url("../fonts/sqmarket-lightitalic.eot");
+    src: url("../fonts/sqmarket-lightitalic.eot?#iefix") format("eot"), url("../fonts/sqmarket-lightitalic.woff") format("woff"), url("../fonts/sqmarket-lightitalic.ttf") format("truetype");
+    font-weight: 200;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "SQMarket";
+    src: url("../fonts/sqmarket-medium.eot");
+    src: url("../fonts/sqmarket-medium.eot?#iefix") format("eot"), url("../fonts/sqmarket-medium.woff") format("woff"), url("../fonts/sqmarket-medium.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "SQMarket";
+    src: url("../fonts/sqmarket-mediumitalic.eot");
+    src: url("../fonts/sqmarket-mediumitalic.eot?#iefix") format("eot"), url("../fonts/sqmarket-mediumitalic.woff") format("woff"), url("../fonts/sqmarket-mediumitalic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "SQMarket";
+    src: url("../fonts/sqmarket-regular.eot");
+    src: url("../fonts/sqmarket-regular.eot?#iefix") format("eot"), url("../fonts/sqmarket-regular.woff") format("woff"), url("../fonts/sqmarket-regular.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "SQMarket";
+    src: url("../fonts/sqmarket-regular.eot");
+    src: url("../fonts/sqmarket-regular.eot?#iefix") format("eot"), url("../fonts/sqmarket-regular.woff") format("woff"), url("../fonts/sqmarket-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "SQMarket";
+    src: url("../fonts/sqmarket-regularitalic.eot");
+    src: url("../fonts/sqmarket-regularitalic.eot?#iefix") format("eot"), url("../fonts/sqmarket-regularitalic.woff") format("woff"), url("../fonts/sqmarket-regularitalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "SQMarket";
+    src: url("../fonts/sqmarket-regularitalic.eot");
+    src: url("../fonts/sqmarket-regularitalic.eot?#iefix") format("eot"), url("../fonts/sqmarket-regularitalic.woff") format("woff"), url("../fonts/sqmarket-regularitalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic
+}
+/* ****************************************** */
+
+/* ******************************************
+	Custom Styles
+****************************************** */
+
+/*	  For details on font-size:100% see here: 
+      http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/ 
+	  
+	  For details on line-height:1 see here:
+      http://meyerweb.com/eric/thoughts/2008/05/06/line-height-abnormal/ 
+
+	  For details on text-size-adjust:100% see here:
+	  https://developer.mozilla.org/en-US/docs/CSS/text-size-adjust 
+*/
+
+html {
+   font-size: 100%;
+   line-height: 1;
+   -moz-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+body {
+    /* - From Square - */
+    background: #fff;
+    *zoom: 1;
+    color: #2d3c48;
+    font: 14px "SQMarket", "Helvetica Neue", sans-serif;
+    line-height: 20px;
+    width: 100%;
+    -webkit-font-smoothing: antialiased
+    /* --- */
+        
+/* Part of Advanced Checkbox Hack for navigation */
+	-webkit-animation: bugfix infinite 1s; 
+	@-webkit-keyframes bugfix {
+		    from {padding: 0;} 
+		    to {padding: 0;} 
+		}
+	
+}
+
+p, #resume li {
+	font-size: 1.063em; /* 17px / 16 = 1.063em */
+	line-height: 1.223; /* 1.3 / 1.063 = 1.223 */
+	margin: .612em 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	    font-weight: 300;
+	    }
+		
+h1 {
+	font-size: 3.189em;
+	line-height: 1.223;
+		}
+	
+h2  {
+	font-size: 2.126em;
+	line-height: 1.223;
+		    }
+			 
+h3 {
+	font-size: 1.382em; 
+	line-height: 1.223;
+		}
+		    
+h4 {
+	font-size: 1em;
+	line-height: 1.56;
+		}
+		
+h3,h4 {      
+	font-weight: 300;
+		}
+		
+h5 {
+	font-size: .8125em;
+	line-height: 1.125;
+		}
+
+h5,h6 {
+	font-family: "SQMarket", "Helvetica Neue", sans-serif;
+	font-size: .85em;
+	line-height: 1.53;
+	font-weight: 500;
+		}
+h6 {
+	color: #aaa;
+	font-weight: 200;
+		}
+		
+.wrapper {
+	        padding: 0 .65em;
+	        -webkit-box-sizing: border-box;
+	        -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+		}
+		
+#masthead {
+			color:#fff;
+            width:80%;
+            text-shadow: black 0.1em 0.1em 0.2em;
+		}
+
+#masthead a:link, a:visited {
+            display: inline-block;
+            max-width: 30em;
+            font-size: 1em;
+            line-height: 1;
+            font-weight: 500;
+            color: #fff;
+            text-decoration: none;
+            background-color: dodgerblue;
+            margin: .65em .26em;
+            padding: .975em 1.975em;
+            border: 0;
+            border-radius: 1.3em;
+            text-shadow: 0 -1px 1px rgba(0, 0, 0, .65);
+}
+
+#masthead a:hover, a:active {
+            background-color: #0074b0;
+}
+		
+/* Headshot */
+
+#we {
+		    width: 80%;
+		    height: 0;
+		    padding-bottom: 25%;
+		    }
+    
+#we img {
+		    width: 100%;
+		    }		
+		
+#nav h3 {
+	text-transform: capitalize;
+		}
+		
+#nav {
+		    padding: .65em 0;
+		}
+	
+#nav h3 {
+		    float: left;
+		    text-transform: capitalize; 
+		}
+	
+#nav ul {
+		    padding: 0;
+		    border-bottom: 1px solid #eee;
+		    margin: .65em 0 .39em;
+		}
+
+#nav li {
+		   border-top: 1px solid #eee;
+		}
+	
+#nav a {
+		   display: block;
+		   font-size: 1.063em;
+		   color: #333;
+		   text-decoration: none;
+		   padding: .975em 1.3em; 
+		}
+	
+#nav a:hover {
+		   background: #f8f8f8;
+		}
+	
+#nav nav {
+		    height: 0;
+		    overflow: hidden;
+		}
+		
+#nav input[type=checkbox] {
+		    position: absolute;
+		    top: -999em;
+		    left: -999em;
+		}
+	
+#nav label { 
+		    display: block;
+		    background: url("../img/icon-menu.png") no-repeat right center;
+		    text-indent: -999em;
+		    cursor: pointer;
+		    -webkit-user-select: none;  /* Chrome all / Safari all */
+		    -moz-user-select: none;     /* Firefox all */
+		    -ms-user-select: none;      /* IE 10+ */
+		    user-select: none;
+		}
+	
+#nav input[type=checkbox]:checked ~ nav {
+		    height: auto;
+		    overflow: hidden;  
+		}
+		
+#content article {
+	padding-top: .65em;
+	padding-bottom: 1.3em;
+		}
+		
+#whatisit h4 {
+	line-height: 1.82;
+		}
+
+.box {
+			padding:14px;
+		}
+		
+.box h4 {
+	color: #999;
+	border-top: 4px double #eee;
+	border-bottom: 1px solid #eee;
+	margin-bottom: .975em; /* 3/4 of 1.3 */
+	text-align: center;
+		}
+		
+.box ul {
+	padding: 0;
+		}
+
+#whatisit figure, .box {
+	background: #fff;
+	-moz-box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );
+	-webkit-box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );
+	box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );
+	padding: .975em; /* 3/4 of 1.3 */
+		}
+		
+/* Creates hover effect on images 
+#whatisit figure:hover,
+.box:hover {
+	 -moz-box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
+	 -webkit-box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
+	 box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
+}*/
+
+/* Image Offset for Indication of Linked Content 
+
+#whatisit figure:hover {
+		 bottom: .26em;
+}*/
+		
+section footer {
+	clear: both;
+		   }
+
+#container-nav {
+	background:#fff;
+}
+
+
+
+#container-content {
+	padding: 24px 0;
+}
+
+#container-footer {
+	padding: 32px 0;
+	background:dodgerblue;
+	color:#eee;
+	font-weight:100;
+}
+
+img {
+	max-width:100%;
+}
+
+#nav,
+#masthead,
+#content,
+#colophon {
+    margin: 0 3.3%;
+    }
+	
+.social {
+    text-align:center;
+    max-width:40%;
+    margin: auto;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+
+/********************************************
+	Fluid Media
+********************************************/
+
+	figure {
+	    position: relative;
+	}
+
+	figure img,
+	figure object,
+	figure embed,
+	figure video {
+	    display: block;
+	    max-width: 100%; 
+	}
+
+	img {
+	    border: 0;
+	    -ms-interpolation-mode: bicubic;
+	}
+
+	/* 
+	interpolation-mode
+	http://css-tricks.com/ie-fix-bicubic-scaling-for-images/
+	 */
+	
+
+
+/* ******************************************
+	   Form Styles Basic Layout
+****************************************** */
+
+	form {
+	    padding: 0 0 1.3em;
+	    }
+    
+	form ul {
+	    padding: 1.3em 0 0;
+	    }
+    
+	form li {
+	    padding: 0 0 .65em;
+	    }
+	
+	legend {
+		font-size: 1.382em; 
+		line-height: 1.223;
+		}
+		    
+	label {
+	    display: block;
+		font-size: 1em;
+		line-height: 1.56;
+	    padding: 0 0 .325em;
+		}
+		
+	legend, label {      
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #fff;
+		}
+	
+	input,
+	textarea {
+	    display: block;
+	    width: 100%;
+	    font-family: "SQMarket", "Helvetica Neue", sans-serif;
+		font-size: 1em;
+		line-height: 1.3;
+		font-weight: 500;
+	    padding: .65em;
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    }
+
+	/**
+	 * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+	 * 2. Improve readability and alignment in all browsers.
+	 */
+
+	textarea {
+	    padding-bottom: 10%;
+	    overflow: auto; /* 1 */
+	    vertical-align: top; /* 2 */
+	    }
+
+	.send {
+	    display: inline-block;
+	    max-width: 30em;
+	    font-size: 1em;
+	    line-height: 1;
+	    font-weight: 500;
+	    color: #fff;
+	    text-decoration: none;
+	    background: dodgerblue;
+	    margin: .65em .26em;
+	    padding: .975em;
+	    border: 0;
+	    border-radius: 1.3em;
+	    text-shadow: 0 -1px 1px rgba(0, 0, 0, .65);
+	    }
+    
+	.send:hover, .send:active, .send:focus {
+	    background: #0074b0;
+	    }
+
+
+/* ******************************************
+    Media Queries for screen less than 45em (720px)
+****************************************** */
+	@media screen and (max-width: 45em) {
+	#container-header {
+		background: #352a38 url("../img/Joanne Playing.jpg") no-repeat top center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		padding: 10% 0;
+			}
+
+			#whatisit figure {
+				max-width: 25em;
+			}
+		}	
+
+/* ******************************************
+	Media Queries for screen wider than 45em (720px)
+****************************************** */
+
+	@media screen and (min-width: 45em) {
+
+	    body {
+	        font-size: 107.692307692308%;
+	        }
+
+        #whatisit article,
+        #faq article {
+            float: left;
+            width: 50%;
+        }
+        
+        #useit article{
+            float: left;
+			width: 33.333%;
+		}
+		
+		#masthead {
+			max-width:50em;
+		}
+		#nav,
+		#masthead,
+		#content,
+		#colophon {
+		    margin: 0 5.5%;
+		    }
+			
+		#container-header {
+			background: #352a38 url("../img/Joanne Playing.jpg") no-repeat top center;
+			padding: 5% 0 1% 0;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+		}
+			
+			
+	    #nav label {
+	        display: none;
+	    }
+		
+    
+	    #nav {
+	        padding: 0;
+	    }
+		
+	    #nav h3 {
+	         margin: .39em 1.3em 0 0;
+	    }
+		
+	    #nav label {
+	        display: none;
+	    }
+		
+	    #nav nav {
+	        height: auto;
+	    }
+		
+	    #nav ul {
+	        border: 0;
+	        margin: 0;
+	        }
+		#nav li {
+		        display: inline;
+		        border: 0;
+		    }
+		#nav a {
+		        display: inline-block;
+		        }
+		
+			
+		.name, .email {
+			    float: left;
+			    width: 50%;
+			    -webkit-box-sizing: border-box;
+			    -moz-box-sizing: border-box;
+			    box-sizing: border-box;
+			    }
+    
+		.name {
+			    padding-right: .65em;
+			    }
+    
+		.email {
+			    padding-left: .65em;
+			    }
+    
+		.send {
+			    width: 48.6%;
+			    }
+	
+	}
+	
+	/* ******************************************
+		Media Queries for screen wider than 60em (960px)
+	****************************************** */
+	
+	@media screen and (min-width: 60em) {
+
+	.name, .email {
+	    padding-right: 1.3em;
+	    padding-left: 0;
+	    clear: both;
+	    }
+    
+	.message textarea {
+	    width: 50%;
+	    }
+    
+	.send {
+	    width: 25%;
+	    margin-left: 50%;
+	    }
+    
+	/* Form Fixes, IE7 and below */
+
+	.ie .message textarea {
+	    *width: 49.9%;
+	    }
+
+	.ie .send {
+	    *margin-left: 46.7%;
+	    }
+
+	}
+
+
+/* ******************************************
+	Print Styles
+****************************************** */
+@media print and (max-width: 8.5in){
+	
+	#masthead {
+		color:black;
+	}
+	
+	#container-header {
+		height: auto;
+	}
+	
+	img {
+		width:2in;
+	}
+	
+	#whatisit	{
+		float:left;
+		width:45%;
+	}
+	
+	#faq	{
+		float:right;
+		width:45%;
+	}
+	
+	#container-footer	{
+		clear:both;
+	}
+	
+}
+
+
+/* Float Clearing http://nicolasgallagher.com/micro-clearfix-hack */
+
+.group:after {
+    content: " "; 
+    display: table;
+    clear: both;
+}
+	/* Clearfix */
+
+.group {
+	    *zoom: 1;
+	    }
+		
+
+/* ******************************************
+    IE 8 and below, legacy browser style fixes
+****************************************** */
+
+/* Figures/Images */
+
+.ie #whatisit figure {
+    width: 100%;
+    box-sizing: border-box;
+    }
+
+/* "*" hack applies only to IE7 and below */
+
+.ie #whatisit figure {
+    *width: auto;
+    }
+   
+/* Navigation */
+
+/* IE8 .checked class for checkbox.js */
+
+#nav input[type=checkbox].checked ~ nav {
+    height: auto;
+    overflow: visible;  
+}
+
+/* Always show nav, IE7 and below */
+
+.ie #nav nav {
+    *height: auto;
+    *overflow: visible;  
+}
+
+/* Hide navicon, IE7 and below */
+
+.ie #nav label { 
+    *background: none;
+    }
+     
+/* box-sizing polyfill, IE7 and below (The URL in .ie textarea is placeholder only. You will need to replace with path to your domain) */
+
+.ie .wrapper,
+.ie .name,
+.ie .email,
+.ie input,
+.ie textarea {
+    *behavior: url("http://www.absolute-path.com/js/boxsizing.htc");
+}
+	
