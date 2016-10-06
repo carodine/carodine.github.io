@@ -444,6 +444,7 @@ h6 {
 #nav h3 {
 		    float: left;
 		    text-transform: capitalize; 
+            margin: 0.08em;
 		}
 	
 #nav ul {
@@ -461,7 +462,7 @@ h6 {
 		   font-size: 1.063em;
 		   color: #333;
 		   text-decoration: none;
-		   padding: .975em 1.3em; 
+		   padding: .975em 0.45em; 
 		}
 	
 #nav a:hover {
@@ -699,17 +700,25 @@ a:link, a:visited{
 ****************************************** */
 	@media screen and (max-width: 45em) {
 	#container-header {
-		background: #352a38 url("../img/Joanne Playing.jpg") no-repeat top center;
+		background: dodgerblue url("../img/Joanne Playing.jpg") no-repeat top center;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		background-size: cover;
-		padding: 10% 0;
+		padding: 10% 0 0 0;
 			}
 
-			#whatisit figure {
+    #whatisit figure {
 				max-width: 25em;
 			}
-		}	
+    h1 {
+	       font-size: 2.589em;
+		}
+    #masthead, #we {
+	       width:95%;
+        }
+    
+    }	
+
 
 /* ******************************************
 	Media Queries for screen wider than 45em (720px)
@@ -761,7 +770,7 @@ a:link, a:visited{
 	    }
 		
 	    #nav h3 {
-	         margin: .39em 1.3em 0 0;
+	         margin: .55em 1.3em 0 0;
 	    }
 		
 	    #nav label {
