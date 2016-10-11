@@ -560,6 +560,7 @@ section footer {
 
 #container-footer {
 	padding: 5px 0;
+    /* Change color when putting back the contact form */
 	background:dodgerblue;
 	color:#eee;
 	font-weight:100;
@@ -753,7 +754,7 @@ a:link, a:visited{
 		    }
 			
 		#container-header {
-			background: #352a38 url("../img/Joanne Playing.jpg") no-repeat top center;
+			background: dodgerblue url("../img/Joanne Playing.jpg") no-repeat top center;
 			padding: 5% 0 1% 0;
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
