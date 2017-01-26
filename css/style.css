@@ -579,8 +579,16 @@ img {
 	
 .social {
     text-align:center;
-    max-width:45%;
     margin: auto;
+}
+
+.social div div {
+    display: inline-flex;
+    margin: 0 42px;
+}
+
+.social div div h4 {
+    border: 0;
 }
 
 a:link, a:visited{
@@ -719,6 +727,13 @@ a:link, a:visited{
 	       width:95%;
         }
     
+        .social {
+            max-width:100%;
+            }
+
+        .social div div {
+            margin: 5px 12px 0px 12px;
+            }
     }	
 
 
@@ -772,7 +787,11 @@ a:link, a:visited{
 	    }
 		
 	    #nav h3 {
-	         margin: .55em 1.3em 0 0;
+	         margin: .56em 1.3em 0 0;
+	    }
+        
+        #nav h3 a {
+	         padding: 0;
 	    }
 		
 	    #nav label {
@@ -794,8 +813,7 @@ a:link, a:visited{
 		#nav a {
 		        display: inline-block;
 		        }
-		
-			
+        
 		.name, .email {
 			    float: left;
 			    width: 50%;
@@ -815,6 +833,10 @@ a:link, a:visited{
 		.send {
 			    width: 48.6%;
 			    }
+        
+        .social {
+            max-width:100%;
+            }
 	
 	}
 	
@@ -849,7 +871,16 @@ a:link, a:visited{
 	    *margin-left: 46.7%;
 	    }
 
+    .social {
+        max-width:75%;
+        }
+
+    .social div div {
+        margin: 10px 42px 0px 42px;
+        }
 	}
+
+
 
 
 /* ******************************************
