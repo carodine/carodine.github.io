@@ -560,7 +560,7 @@ section footer {
 
 #container-footer {
 	padding: 5px 0;
-    /* Change color when putting back the contact form */
+    /* TODO: Change color when putting back the contact form */
 	background:dodgerblue;
 	color:#eee;
 	font-weight:100;
@@ -594,6 +594,17 @@ img {
 a:link, a:visited{
     text-decoration: none;
     color: dodgerblue;
+}
+
+#InTheNews a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+#InTheNews img {
+    margin-top: .5em;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 
