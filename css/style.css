@@ -527,6 +527,10 @@ h7 {
 	padding: 0;
 		}
 
+.box h5 {
+    display: flex;
+}
+
 #whatisit figure, .box {
 	background: #fff;
 	-moz-box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );
@@ -601,7 +605,7 @@ a:link, a:visited{
     color: dodgerblue;
 }
 
-#InTheNews img {
+#InTheNews img, .box a {
     margin-left: auto;
     margin-right: auto; 
 }
