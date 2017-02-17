@@ -387,6 +387,11 @@ h6 {
 	color: #aaa;
 	font-weight: 200;
 		}
+
+h7 {
+	font-size: 1em;
+	line-height: 1.56;
+		}
 		
 .wrapper {
 	        padding: 0 .65em;
@@ -592,11 +597,6 @@ img {
 }
 
 a:link, a:visited{
-    text-decoration: none;
-    color: dodgerblue;
-}
-
-#InTheNews a:link, a:visited {
     text-decoration: none;
     color: dodgerblue;
 }
