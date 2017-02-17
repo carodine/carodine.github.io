@@ -724,7 +724,7 @@ a:link, a:visited{
 ****************************************** */
 	@media screen and (max-width: 45em) {
 	#container-header {
-		background: dodgerblue url("../img/Joanne Playing.jpg") no-repeat top center;
+		background: dodgerblue url("../img/Joanne_Playing.jpg") no-repeat top center;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		background-size: cover;
@@ -783,7 +783,7 @@ a:link, a:visited{
 		    }
 			
 		#container-header {
-			background: dodgerblue url("../img/Joanne Playing.jpg") no-repeat top center;
+			background: dodgerblue url("../img/Joanne_Playing.jpg") no-repeat top center;
 			padding: 5% 0 1% 0;
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
