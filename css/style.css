@@ -531,7 +531,7 @@ h7 {
     display: flex;
 }
 
-#whatisit figure, .box {
+.box {
 	background: #fff;
 	-moz-box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );
 	-webkit-box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );
@@ -605,9 +605,19 @@ a:link, a:visited{
     color: dodgerblue;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 #InTheNews img, .box a {
     margin-left: auto;
     margin-right: auto; 
+}
+
+#map {
+    height: 200px;
+    width: 100%;
+    background-color: grey;
 }
 
 
@@ -617,6 +627,7 @@ a:link, a:visited{
 
 	figure {
 	    position: relative;
+        padding: inherit;
 	}
 
 	figure img,

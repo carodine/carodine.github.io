@@ -58,7 +58,7 @@
         <!-- sumo - Marketing tools-->
         <script src="//load.sumome.com/" data-sumo-site-id="0d4933086772d40fc96eeb0b1fb062d333b8bd2150567e627868c4fcf49736c1" async="async"></script>
         
-	<!-- Facebook Pixel Code -->
+	      <!-- Facebook Pixel Code -->
         <script>
         !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -73,8 +73,8 @@
         /></noscript>
         <!-- DO NOT MODIFY -->
         <!-- End Facebook Pixel Code -->
-	<meta property="og:image" content="http://workingensemble.ca/img/FB_Joanne_Playing.jpg" />
 
+	      <meta property="og:image" content="http://workingensemble.ca/img/FB_Joanne_Playing.jpg" />
 
 	</head>
     <body lang="en">
@@ -132,22 +132,25 @@
                     
                     <article class="group wrapper">
                         <div class="box">
-                            <h4>For the parent</h4>
+                            <h4>Parents</h4>
                             <ul>
                                 <li>- A seat at the community table in the shared workspace</li>
                                 <li>- Free wifi</li>
                                 <li>- Free coffee and tea, and of course, water</li>
                                 <li>- Access to the kitchen with a sink, fridge and microwave (Bring your own lunch/snack)</li>
                             </ul>
+                            <figure>
+                                <img src="./img/Working_Area_at_Working_Ensemble.jpg" alt="Shared workspace"/>
+                            </figure>
                             <h5>NOTE: Parent must remain on site and be readily available while the children are under our care.</h5>
                         </div>
                     </article>
                     <article class="group wrapper">
                         <div class="box">
-                            <h4>For the children</h4>
+                            <h4>Children</h4>
                             <ul>
-                                <li>- Activities - including, but not limited to: free play, crafts, reading - by certified staff in the play area, while you are working in the workspace (You are, of course, welcome to take sneak peeks, or even stay in the play area) </li>
-                                <li>- Snacks - we suggest you bring their own, but we have some too (Let us know of any allergies)</li>
+                                <li>- Activities (including but not limited to: free play, crafts, reading) by certified staff in the play area, while you are working in the workspace (You are, of course, welcome to take sneak peeks, or even stay in the play area) </li>
+                                <li>- Snacks: you can bring their own, or we have some  (Let us know of any allergies)</li>
                             </ul>
                         </div>
                     </article>
@@ -193,8 +196,8 @@
                             <br/>
                             <h7>128 Lansdowne Ave <br/>TORONTO, ON, M6K 2V9</h7>
                             <figure>
-                               <img src="./img/WE%20on%20map.png" alt="Map">
-                           </figure>
+                                <div id="map"></div>
+                            </figure>
                         </div>
                     </article>
                 </section>
@@ -309,6 +312,25 @@
                 <p>© 2016 Working Ensemble. All rights reserved. </p>
             </footer>
         </div>
+
+    <script>
+      function initMap() {
+        var working_ensemble = {lat: 43.6447275, lng: -79.4406261};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: working_ensemble,
+          scrollwheel: false
+        });
+        var marker = new google.maps.Marker({
+          position: working_ensemble,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2VoXtv5jrcHYgiES_hLAw7MEqdaB3yLs&callback=initMap">
+    </script>
+
         <script id="_agile_min_js" async type="text/javascript" src="https://workingensemble.agilecrm.com/stats/min/agile-min.js"> </script>
         <script type="text/javascript" >
         var Agile_API = Agile_API || {}; Agile_API.on_after_load = function(){
@@ -316,8 +338,7 @@
         _agile.track_page_view();
         _agile_execute_web_rules();};
         </script>
-	    
-	    
+    
 	<script>
 	  window.intercomSettings = {
 	    app_id: "eacnzstr"
