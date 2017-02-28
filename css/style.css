@@ -387,6 +387,11 @@ h6 {
 	color: #aaa;
 	font-weight: 200;
 		}
+
+h7 {
+	font-size: 1em;
+	line-height: 1.56;
+		}
 		
 .wrapper {
 	        padding: 0 .65em;
@@ -522,13 +527,19 @@ h6 {
 	padding: 0;
 		}
 
-#whatisit figure, .box {
+.box h5 {
+    display: flex;
+}
+
+.box {
 	background: #fff;
 	-moz-box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );
 	-webkit-box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );
 	box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );
 	padding: .975em; /* 3/4 of 1.3 */
 		}
+
+
 		
 /* Creates hover effect on images 
 #whatisit figure:hover,
@@ -560,7 +571,7 @@ section footer {
 
 #container-footer {
 	padding: 5px 0;
-    /* Change color when putting back the contact form */
+    /* TODO: Change color when putting back the contact form */
 	background:dodgerblue;
 	color:#eee;
 	font-weight:100;
@@ -579,13 +590,36 @@ img {
 	
 .social {
     text-align:center;
-    max-width:45%;
     margin: auto;
+}
+
+.social div div {
+    display: inline-flex;
+    margin: 0 42px;
+}
+
+.social div div h4 {
+    border: 0;
 }
 
 a:link, a:visited{
     text-decoration: none;
     color: dodgerblue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#InTheNews img, .box a {
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#map {
+    height: 200px;
+    width: 100%;
+    background-color: grey;
 }
 
 
@@ -595,6 +629,7 @@ a:link, a:visited{
 
 	figure {
 	    position: relative;
+        padding: inherit;
 	}
 
 	figure img,
@@ -702,7 +737,7 @@ a:link, a:visited{
 ****************************************** */
 	@media screen and (max-width: 45em) {
 	#container-header {
-		background: dodgerblue url("../img/Joanne Playing.jpg") no-repeat top center;
+		background: dodgerblue url("../img/Joanne_Playing.jpg") no-repeat top center;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		background-size: cover;
@@ -719,6 +754,13 @@ a:link, a:visited{
 	       width:95%;
         }
     
+        .social {
+            max-width:100%;
+            }
+
+        .social div div {
+            margin: 5px 12px 0px 12px;
+            }
     }	
 
 
@@ -754,7 +796,7 @@ a:link, a:visited{
 		    }
 			
 		#container-header {
-			background: dodgerblue url("../img/Joanne Playing.jpg") no-repeat top center;
+			background: dodgerblue url("../img/Joanne_Playing.jpg") no-repeat top center;
 			padding: 5% 0 1% 0;
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
@@ -772,7 +814,11 @@ a:link, a:visited{
 	    }
 		
 	    #nav h3 {
-	         margin: .55em 1.3em 0 0;
+	         margin: .56em 1.3em 0 0;
+	    }
+        
+        #nav h3 a {
+	         padding: 0;
 	    }
 		
 	    #nav label {
@@ -794,8 +840,7 @@ a:link, a:visited{
 		#nav a {
 		        display: inline-block;
 		        }
-		
-			
+        
 		.name, .email {
 			    float: left;
 			    width: 50%;
@@ -815,6 +860,10 @@ a:link, a:visited{
 		.send {
 			    width: 48.6%;
 			    }
+        
+        .social {
+            max-width:100%;
+            }
 	
 	}
 	
@@ -849,7 +898,16 @@ a:link, a:visited{
 	    *margin-left: 46.7%;
 	    }
 
+    .social {
+        max-width:75%;
+        }
+
+    .social div div {
+        margin: 10px 42px 0px 42px;
+        }
 	}
+
+
 
 
 /* ******************************************
