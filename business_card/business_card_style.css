@@ -1,3 +1,11 @@
+body.en :lang(fr) {
+  display: none;
+}
+body.fr :lang(en) {
+  display: none;
+}
+
+
 body {
     
     text-align: center;
