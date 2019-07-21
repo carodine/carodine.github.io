@@ -2,23 +2,31 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Diane's Business Card</title>
+		<title lang="en">Diane's Business Card</title>
+		<title lang="fr">Carte de visite de Diane</title>
 		<link rel="stylesheet" type="text/css" href="business_card_style.css"/>
 	</head>
 	<body lang="en">
-        <div>
-            <h1 class="red">
-                Diane Chevalard
-            </h1>
-            <h2 class="blue">
-                Software Developer
-            </h2>
-            <h3 class="blue">
-            <p>diane.chevalard@gmail.com</p>
-            </h3>
-            <h3 class="red">
-                ca.linkedin.com/in/dianechevalard
-            </h3>
-        </div>
-    </body>
+		<div>
+			<button onclick="document.body.className='en'">english</button>
+			<button onclick="document.body.className='fr'">français</button>
+		</div>
+        	<div>
+			<h1 class="red">
+				Diane Chevalard
+			</h1>
+			<h2 class="blue" lang="en">
+				Software Developer
+			</h2>
+			<h2 class="blue" lang="fr">
+				Développeuse de logiciels
+			</h2>
+			<h3 class="blue">
+				<p>diane.chevalard@gmail.com</p>
+			</h3>
+			<h3 class="red">
+				ca.linkedin.com/in/dianechevalard
+			</h3>
+		</div>
+    	</body>
 </html>
