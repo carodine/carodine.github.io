@@ -603,6 +603,7 @@ img {
 a:link, a:visited{
     text-decoration: none;
     color: dodgerblue;
+    background-color: #fff;
 }
 
 a:hover {
